@@ -7,7 +7,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity implements IOnclickListener {
+    ArrayList<Person> people=new ArrayList<Person>();
+    Person p = new Person("Беккулу",12,55.0,50.0,"student");
+    Person b = new Person("Сайкал",12,55.0,50.0,"student");
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements IOnclickListener 
         setContentView(R.layout.activity_main);
         RecyclerView recyclerView=findViewById(R.id.recyclerView);
         MainAdapter adapter=new MainAdapter();
+        people.add(p);
+        people.add(b);
         adapter.listener=this;
         recyclerView.setAdapter(adapter);
     }
@@ -30,4 +39,8 @@ public class MainActivity extends AppCompatActivity implements IOnclickListener 
         openSecond(s);
 
     }
+
+
+
+
 }

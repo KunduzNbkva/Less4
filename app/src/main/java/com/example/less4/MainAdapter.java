@@ -11,15 +11,15 @@ import java.util.ArrayList;
 
 public class MainAdapter extends RecyclerView.Adapter<MainViewHolder> {
     ArrayList<String> data=new ArrayList<String>(){{
-        add("Test 1");
-        add("Test 2");
-        add("Test 3");
-        add("Test 1");
-        add("Test 2");
-        add("Test 3");
-        add("Test 1");
-        add("Test 2");
-        add("Test 3");
+        add("Абытаев Беккулу");
+        add("Аралбаева Сайкал");
+        add("Бекуланов Жандос");
+        add("Дамирбеков Аннур");
+        add("Журумбаева Акниет");
+        add("Канатбекова Луиза");
+        add("Муканбетова Перизат");
+        add("Нарынбекова Кундуз");
+        add("Усупбаева Алина");
     }};
     IOnclickListener listener;
     @NonNull
