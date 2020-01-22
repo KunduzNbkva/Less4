@@ -1,6 +1,4 @@
 package com.example.less4;
-
-import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;

@@ -29,7 +29,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainViewHolder> {
         View v=layoutInflater.inflate(R.layout.viewholder_main,parent,false);
 MainViewHolder vh=new MainViewHolder(v);
 vh.listener=listener;
-        return new MainViewHolder(v);
+        return vh;
     }
 
     @Override
